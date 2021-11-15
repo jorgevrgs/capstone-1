@@ -6,6 +6,10 @@
   display: flex;
 }
 
+.d-grid {
+  display: grid;
+}
+
 @media screen and (min-width: $breakpoint-md) {
   .d-md-none {
     display: none;
@@ -13,5 +17,9 @@
 
   .d-md-flex {
     display: flex;
+  }
+
+  .d-md-grid {
+    display: grid;
   }
 }
