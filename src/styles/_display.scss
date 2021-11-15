@@ -1,0 +1,9 @@
+.d-none {
+  display: none;
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .d-md-none {
+    display: none;
+  }
+}

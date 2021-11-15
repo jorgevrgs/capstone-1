@@ -1,0 +1,17 @@
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .d-md-flex {
+    display: flex;
+  }
+
+  .flex-md-row {
+    flex-direction: row;
+  }
+}

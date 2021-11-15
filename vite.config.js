@@ -8,6 +8,7 @@ const config = {
   resolve: {
     alias: {
       '@': './src',
+      '~': './node_modules',
     },
   },
 };

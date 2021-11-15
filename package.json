@@ -37,5 +37,9 @@
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0",
     "vite": "^2.6.4"
+  },
+  "dependencies": {
+    "@fontsource/lato": "^4.5.0",
+    "@mdi/font": "^6.5.95"
   }
 }

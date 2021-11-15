@@ -23,9 +23,39 @@
       href="/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="/favicon/site.webmanifest" />
+    <script type="module" src="src/main.js"></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="src/main.js"></script>
+    <header class="header">
+      <button
+        class="btn btn-menu"
+        type="button"
+        aria-label="Mobile menu button"
+      >
+        <span class="mdi mdi-menu" aria-hidden></span>
+      </button>
+
+      <img src="/logo.svg" alt="Logo image" />
+
+      <ul class="nav-links">
+        <li class="nav-link">
+          <a href="#">About</a>
+        </li>
+        <li class="nav-link">
+          <a href="#">Program</a>
+        </li>
+        <li class="nav-link">
+          <a href="#">Join</a>
+        </li>
+        <li class="nav-link">
+          <a href="#">Sponsor</a>
+        </li>
+        <li class="nav-link">
+          <a href="#">News</a>
+        </li>
+      </ul>
+    </header>
+    <main class="main"></main>
+    <footer class="footer"></footer>
   </body>
 </html>
