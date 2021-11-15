@@ -70,8 +70,34 @@
   font-style: italic;
 }
 
+.text-lowercase {
+  text-transform: lowercase;
+}
+
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 @media screen and (min-width: $breakpoint-md) {
@@ -147,7 +173,33 @@
     font-style: italic;
   }
 
+  .text-md-lowercase {
+    text-transform: lowercase;
+  }
+
   .text-md-uppercase {
     text-transform: uppercase;
+  }
+
+  .text-md-capitalize {
+    text-transform: capitalize;
+  }
+
+  .text-md-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .text-md-left {
+    text-align: left;
+  }
+
+  .text-md-center {
+    text-align: center;
+  }
+
+  .text-md-right {
+    text-align: right;
   }
 }
