@@ -15,18 +15,22 @@
 
   .section {
     min-height: 100vh;
-  }
-}
 
-.title {
-  position: relative;
+    .title {
+      position: relative;
+      padding: 1rem;
 
-  .title::after {
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    width: 3rem;
-    height: 2px;
-    color: $color-secondary;
+      &::after {
+        content: "";
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 5rem;
+        height: 2px;
+        background-color: $color-secondary;
+        transform: translateX(-50%);
+      }
+    }
   }
 }

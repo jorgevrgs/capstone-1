@@ -1,22 +1,30 @@
-.header-mobile {
-  overflow: hidden;
-  position: relative;
-  z-index: 10;
+.header {
+  background-color: transparent;
 
-  .nav-items {
-    background-color: $color-white;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
+  .btn-menu {
+    position: relative;
+  }
 
-    .nav-link {
-      line-height: 300%;
+  &.header-mobile {
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+
+    .nav-items {
+      background-color: $color-white;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      top: 0;
+      left: 0;
+
+      .nav-link {
+        line-height: 300%;
+      }
     }
   }
 }
