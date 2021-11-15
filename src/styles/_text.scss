@@ -1,3 +1,11 @@
+.font-primary {
+  font-family: $font-primary;
+}
+
+.font-secondary {
+  font-family: $font-secondary;
+}
+
 .font-size-base {
   font-size: $font-size-base;
 }
@@ -34,7 +42,47 @@
   font-size: $h6-font-size;
 }
 
+.font-weight-black {
+  font-weight: 900;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-regular {
+  font-weight: 400;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-weight-thin {
+  font-weight: 100;
+}
+
+.font-style-italic {
+  font-style: italic;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: $breakpoint-md) {
+  .font-md-primary {
+    font-family: $font-primary;
+  }
+
+  .font-md-secondary {
+    font-family: $font-secondary;
+  }
+
   .font-size-md-base {
     font-size: $font-size-base;
   }
@@ -69,5 +117,37 @@
 
   .font-size-md-h6 {
     font-size: $h6-font-size;
+  }
+
+  .font-md-weight-black {
+    font-weight: 900;
+  }
+
+  .font-md-weight-bold {
+    font-weight: 700;
+  }
+
+  .font-md-weight-medium {
+    font-weight: 500;
+  }
+
+  .font-md-weight-regular {
+    font-weight: 400;
+  }
+
+  .font-md-weight-light {
+    font-weight: 300;
+  }
+
+  .font-md-weight-thin {
+    font-weight: 100;
+  }
+
+  .font-md-style-italic {
+    font-style: italic;
+  }
+
+  .text-md-uppercase {
+    text-transform: uppercase;
   }
 }

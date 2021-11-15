@@ -23,7 +23,7 @@
       href="/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="/favicon/site.webmanifest" />
-    <script type="module" src="src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </head>
   <body>
     <header class="d-md-flex justify-md-space-around header">
@@ -32,7 +32,7 @@
         type="button"
         aria-label="Mobile menu button"
       >
-        <span class="mdi mdi-menu font-size-h1" aria-hidden></span>
+        <span class="mdi mdi-menu font-size-h2" aria-hidden></span>
       </button>
 
       <a class="d-none d-md-flex" href="/" aria-describedby="logo">
@@ -40,10 +40,7 @@
         <img src="/logo.svg" alt="Logo image" />
       </a>
 
-      <ul
-        class="d-none d-md-flex justify-md-space-around gap-md-3 nav-items"
-        role="list"
-      >
+      <ul class="d-none d-md-flex justify-md-space-around gap-md-3 nav-items">
         <li class="nav-item">
           <a class="secondary--text nav-link" href="#">About</a>
         </li>
@@ -61,7 +58,45 @@
         </li>
       </ul>
     </header>
-    <main class="main"></main>
+    <main class="d-flex flex-column main">
+      <section class="home">
+        <div class="container">
+          <div class="pa-4 d-flex flex-column justify-center gap-1 content">
+            <p class="secondary--text greeting">"Hello! Sharing world"</p>
+            <h1
+              class="
+                font-size-h1
+                text-uppercase
+                font-weight-black
+                secondary--text
+                title
+              "
+            >
+              VueConf Toronto 2021
+            </h1>
+            <p class="border border-white border-3px pa-4 details">
+              Join 10,000+ developers from more than 100 countries for the
+              premier Vue.js conference to learn and discuss about the latest of
+              Vue.js and related technologies.
+            </p>
+            <p
+              class="
+                font-weight-bold font-size-h4
+                text-uppercase
+                font-secondary
+                when
+              "
+            >
+              2021.11.22
+              <time datetime="2021-11-22">(mon)</time>
+              ~ 23
+              <time datetime="2021-11-23">(tue)</time>
+            </p>
+            <p class="where">@ Virtual</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer"></footer>
   </body>
 </html>

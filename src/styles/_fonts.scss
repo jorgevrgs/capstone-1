@@ -4,6 +4,11 @@ $mdi-font-path: "../../node_modules/@mdi/font/fonts";
 @import "@fontsource/lato";
 
 @font-face {
-  font-family: Cocogoose;
-  src: url(../assets/fonts/cocogoose-pro.regular.ttf);
+  font-family: "Cocogoose";
+  src: url("@/assets/fonts/Cocogoose_trial.eot?") format("eot"),
+    url("@/assets/fonts/Cocogoose_trial.woff") format("woff"),
+    url("@/assets/fonts/Cocogoose_trial.ttf") format("truetype"),
+    url("@/assets/fonts/Cocogoose_trial.svg#COCOGOOSE") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }

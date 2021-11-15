@@ -1,3 +1,4 @@
+import { resolve } from 'path';
 import packageInfo from './package.json';
 
 /**
@@ -7,8 +8,8 @@ const config = {
   publicPath: process.env.NODE_ENV === 'production' ? packageInfo.name : '/',
   resolve: {
     alias: {
-      '@': './src',
-      '~': './node_modules',
+      '@': resolve(__dirname, '/src'),
+      '~': resolve(__dirname, '/node_modules'),
     },
   },
 };
