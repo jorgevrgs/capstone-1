@@ -59,27 +59,31 @@
 }
 
 .ma-0 {
-  padding: 0;
+  margin: 0;
 }
 
 .ma-1 {
-  padding: 0.25rem;
+  margin: 0.25rem;
 }
 
 .ma-2 {
-  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
 .ma-3 {
-  padding: 0.75rem;
+  margin: 0.75rem;
 }
 
 .ma-4 {
-  padding: 1rem;
+  margin: 1rem;
 }
 
 .ma-8 {
-  padding: 2rem;
+  margin: 2rem;
+}
+
+.mx-auto {
+  margin-inline: auto;
 }
 
 @media screen and (min-width: $breakpoint-md) {
@@ -144,26 +148,30 @@
   }
 
   .ma-md-0 {
-    padding: 0;
+    margin: 0;
   }
 
   .ma-md-1 {
-    padding: 0.25rem;
+    margin: 0.25rem;
   }
 
   .ma-md-2 {
-    padding: 0.5rem;
+    margin: 0.5rem;
   }
 
   .ma-md-3 {
-    padding: 0.75rem;
+    margin: 0.75rem;
   }
 
   .ma-md-4 {
-    padding: 1rem;
+    margin: 1rem;
   }
 
   .ma-md-8 {
-    padding: 2rem;
+    margin: 2rem;
+  }
+
+  .mx-md-auto {
+    margin-inline: auto;
   }
 }
