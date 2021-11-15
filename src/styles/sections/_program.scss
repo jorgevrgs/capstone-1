@@ -15,6 +15,7 @@
         grid-template-rows: 1fr;
         background-color: rgba($color-light, 0.25);
 
+        & > :nth-child(1),
         & > :nth-child(2) {
           align-self: center;
         }
