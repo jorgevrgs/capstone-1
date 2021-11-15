@@ -1,0 +1,41 @@
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-4 {
+  gap: 4rem;
+}
+
+.gap-5 {
+  gap: 5rem;
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .gap-md-1 {
+    gap: 1rem;
+  }
+
+  .gap-md-2 {
+    gap: 2rem;
+  }
+
+  .gap-md-3 {
+    gap: 3rem;
+  }
+
+  .gap-md-4 {
+    gap: 4rem;
+  }
+
+  .gap-md-5 {
+    gap: 5rem;
+  }
+}

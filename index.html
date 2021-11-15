@@ -26,32 +26,38 @@
     <script type="module" src="src/main.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="d-md-flex justify-md-space-around header">
       <button
-        class="btn btn-menu"
+        class="d-flex d-md-none btn btn-menu"
         type="button"
         aria-label="Mobile menu button"
       >
-        <span class="mdi mdi-menu" aria-hidden></span>
+        <span class="mdi mdi-menu font-size-h1" aria-hidden></span>
       </button>
 
-      <img src="/logo.svg" alt="Logo image" />
+      <a class="d-none d-md-flex" href="/" aria-describedby="logo">
+        <span class="d-none" id="logo">Logo</span>
+        <img src="/logo.svg" alt="Logo image" />
+      </a>
 
-      <ul class="nav-links">
-        <li class="nav-link">
-          <a href="#">About</a>
+      <ul
+        class="d-none d-md-flex justify-md-space-around gap-md-3 nav-items"
+        role="list"
+      >
+        <li class="nav-item">
+          <a class="secondary--text nav-link" href="#">About</a>
         </li>
-        <li class="nav-link">
-          <a href="#">Program</a>
+        <li class="nav-item">
+          <a class="secondary--text nav-link" href="#">Program</a>
         </li>
-        <li class="nav-link">
-          <a href="#">Join</a>
+        <li class="nav-item">
+          <a class="secondary--text nav-link" href="#">Join</a>
         </li>
-        <li class="nav-link">
-          <a href="#">Sponsor</a>
+        <li class="nav-item">
+          <a class="secondary--text nav-link" href="#">Sponsor</a>
         </li>
-        <li class="nav-link">
-          <a href="#">News</a>
+        <li class="nav-item">
+          <a class="secondary--text nav-link" href="#">News</a>
         </li>
       </ul>
     </header>
