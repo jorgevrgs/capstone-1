@@ -1,0 +1,20 @@
+.program {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background-image: url(@/assets/svg/plus.svg);
+
+  .program::before {
+    position: absolute;
+    top: 0;
+    width: 0;
+    content: "";
+    display: flex;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+
+    border: 1px solid red;
+    background-color: red;
+  }
+}

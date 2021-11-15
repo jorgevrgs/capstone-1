@@ -17,3 +17,16 @@
     min-height: 100vh;
   }
 }
+
+.title {
+  position: relative;
+
+  .title::after {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 3rem;
+    height: 2px;
+    color: $color-secondary;
+  }
+}
