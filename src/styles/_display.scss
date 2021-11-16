@@ -10,6 +10,10 @@
   display: grid;
 }
 
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
 @media screen and (min-width: $breakpoint-md) {
   .d-md-none {
     display: none;
@@ -21,5 +25,9 @@
 
   .d-md-grid {
     display: grid;
+  }
+
+  .overflow-y-md-hidden {
+    overflow-y: hidden;
   }
 }

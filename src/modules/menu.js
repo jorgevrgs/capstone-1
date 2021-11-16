@@ -16,6 +16,7 @@ export default () => {
 
   const handleToggle = () => {
     toggleClass(headerElement, 'header-mobile');
+    toggleClass(document.body, 'overflow-y-hidden');
   };
 
   /**
