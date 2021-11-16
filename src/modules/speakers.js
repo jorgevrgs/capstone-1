@@ -7,7 +7,7 @@ export default async () => {
   // ░█▄▄▄ ▀▀▀ ▀▀▀ ▀───▀ ▀▀▀ ▀──▀ ──▀── ▀▀▀
   const speakersElement = document.querySelector('.speakers');
 
-  const url = '/json/speakers.json';
+  const url = 'json/speakers.json';
   const api = new ApiClass(url);
 
   const result = await api.get();
