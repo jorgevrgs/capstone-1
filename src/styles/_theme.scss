@@ -33,6 +33,23 @@
         transform: translateX(-50%);
       }
     }
+
+    .subtitle {
+      position: relative;
+      padding-block: 1rem;
+      margin-block-end: 2rem;
+
+      &::after {
+        content: "";
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 4rem;
+        height: 2px;
+        background-color: lighten($color-primary, 25%);
+      }
+    }
   }
 }
 

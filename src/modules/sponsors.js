@@ -1,17 +1,17 @@
-import { buildTemplate, speakersTemplate } from '../helpers/templates.js';
+import { buildTemplate, sponsorsTemplate } from '../helpers/templates.js';
 import ApiClass from '../classes/ApiClass.js';
 
 export default async () => {
   // ░█▀▀▀ █── █▀▀ █▀▄▀█ █▀▀ █▀▀▄ ▀▀█▀▀ █▀▀
   // ░█▀▀▀ █── █▀▀ █─▀─█ █▀▀ █──█ ──█── ▀▀█
   // ░█▄▄▄ ▀▀▀ ▀▀▀ ▀───▀ ▀▀▀ ▀──▀ ──▀── ▀▀▀
-  const speakersElement = document.querySelector('.speakers');
+  const speakersElement = document.querySelector('.sponsors-content');
 
-  const api = new ApiClass('speakers');
+  const api = new ApiClass('sponsors');
 
   const result = await api.get();
 
-  const object = speakersTemplate(result);
+  const object = sponsorsTemplate(result);
   const element = buildTemplate(object);
 
   speakersElement.appendChild(element);

@@ -1,8 +1,8 @@
 export default class ApiClass {
   #url = '';
 
-  constructor() {
-    this.#url = 'json/speakers.json';
+  constructor(service) {
+    this.#url = `json/${service}.json`;
   }
 
   get() {

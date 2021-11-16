@@ -124,3 +124,40 @@ export const speakersTemplate = (speakers) => {
 
   return people;
 };
+
+export const sponsorTemplate = (sponsor) => ({
+  tag: 'a',
+  className: 'sponsor',
+  attributes: {
+    href: sponsor.website,
+    target: '_blank',
+  },
+  children: [
+    {
+      tag: 'img',
+      className: 'sponsor-logo',
+      attributes: {
+        src: sponsor.imageUrl,
+        alt: sponsor.name,
+      },
+    },
+  ],
+});
+
+export const sponsorsTemplate = (sponsors) => {
+  const result = {
+    tag: 'ul',
+    className: ['d-grid', 'gap-1', 'items'],
+    children: [],
+  };
+
+  sponsors.forEach((sponsor) => {
+    result.children.push({
+      tag: 'li',
+      className: 'item',
+      children: [sponsorTemplate(sponsor)],
+    });
+  });
+
+  return result;
+};
