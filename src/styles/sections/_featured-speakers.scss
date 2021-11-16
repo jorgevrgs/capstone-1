@@ -60,6 +60,14 @@
       }
     }
   }
+
+  .buttons {
+    margin-block-start: 4rem;
+
+    .icon {
+      margin-inline-start: 1rem;
+    }
+  }
 }
 
 @media screen and (min-width: $breakpoint-md) {

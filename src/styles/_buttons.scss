@@ -9,6 +9,10 @@
     border: 3px solid $color-secondary;
   }
 
+  &.btn-light {
+    border: 3px solid $color-light;
+  }
+
   &.btn-primary {
     background-color: $color-secondary;
     color: $color-white;

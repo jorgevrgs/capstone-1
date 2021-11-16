@@ -22,6 +22,16 @@
   height: 4rem;
 }
 
+.icon-chevron-down {
+  background-image: url(@/assets/svg/chevron-down.svg);
+}
+
+.icon-chevron-down-secondary {
+  mask: url(@/assets/svg/chevron-down.svg);
+  mask-size: cover;
+  background-color: $color-secondary;
+}
+
 .icon-close {
   background-image: url(@/assets/svg/close.svg);
 }
