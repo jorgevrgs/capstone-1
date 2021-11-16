@@ -8,4 +8,12 @@
   &.btn-secondary {
     border: 3px solid $color-secondary;
   }
+
+  &.btn-primary {
+    background-color: $color-secondary;
+    color: $color-white;
+    font-size: 2rem;
+    padding-inline: 4rem;
+    padding-block: 3rem;
+  }
 }

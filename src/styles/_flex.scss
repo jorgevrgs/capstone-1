@@ -50,6 +50,18 @@
   align-items: stretch;
 }
 
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
 @media screen and (min-width: $breakpoint-md) {
   .flex-md-row {
     flex-direction: row;
@@ -101,5 +113,17 @@
 
   .align-md-stretch {
     align-items: stretch;
+  }
+
+  .align-self-md-center {
+    align-self: center;
+  }
+
+  .align-self-md-start {
+    align-self: flex-start;
+  }
+
+  .align-self-md-end {
+    align-self: flex-end;
   }
 }
