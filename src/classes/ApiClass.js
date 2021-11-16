@@ -2,14 +2,16 @@ export default class ApiClass {
   #url = '';
 
   constructor() {
-    this.#url = '../assets/json/speakers.json';
+    this.#url = 'json/speakers.json';
   }
 
   get() {
     return new Promise((resolve, reject) => {
-      import(this.#url)
+      fetch(this.#url)
+        .then((res) => res.json())
         .then((res) => {
-          resolve(res.default);
+          console.log({ res });
+          resolve(res);
         })
         .catch(reject);
     });

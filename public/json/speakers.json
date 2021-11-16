@@ -3,12 +3,12 @@
     "name": "Evan You",
     "subtitle": "Husband, father of two, independent open source developer. Creator / project lead of @vuejs , @vite_js and connoisseur of sushi.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorem voluptate corrupti quaerat cum necessitatibus doloribus. Et, exercitationem, illo asperiores ad expedita error maxime deserunt nesciunt aspernatur, a iste sint?",
-    "imageUrl": "../assets/speakers/evan.d83c5f2.jpg"
+    "imageUrl": "/speakers/evan.d83c5f2.jpg"
   },
   {
     "name": "Sebastien Chopin",
     "subtitle": "@nuxtlabs CEO • Making web development intuitive with @nuxt_js and @docus_",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla, quo quis ad perspiciatis cupiditate dolores provident doloribus, nihil, molestiae ullam dignissimos nesciunt! Rerum corporis quos veniam mollitia quam magni?",
-    "imageUrl": "../assets/speakers/sebastien.8c8c561.jpg"
+    "imageUrl": "/speakers/sebastien.8c8c561.jpg"
   }
 ]

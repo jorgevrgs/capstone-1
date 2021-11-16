@@ -1,12 +1,12 @@
 import { resolve } from 'path';
 import autoprefixer from 'autoprefixer';
-import packageInfo from './package.json';
+// import packageInfo from './package.json';
 
 /**
  * @type {import('vite').UserConfig}
  */
 const config = {
-  base: process.env.NODE_ENV === 'production' ? `/${packageInfo.name}/` : '/',
+  // base: process.env.NODE_ENV === 'production' ? `/${packageInfo.name}/` : '/',
   resolve: {
     alias: {
       '@': resolve(__dirname, '/src'),
