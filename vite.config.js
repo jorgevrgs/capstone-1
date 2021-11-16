@@ -1,4 +1,5 @@
 import { resolve } from 'path';
+import autoprefixer from 'autoprefixer';
 import packageInfo from './package.json';
 
 /**
@@ -10,6 +11,11 @@ const config = {
     alias: {
       '@': resolve(__dirname, '/src'),
       '~': resolve(__dirname, '/node_modules'),
+    },
+  },
+  css: {
+    postcss: {
+      plugins: [autoprefixer],
     },
   },
 };
