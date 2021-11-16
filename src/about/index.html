@@ -23,7 +23,7 @@
       href="/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="/favicon/site.webmanifest" />
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="../main.js"></script>
   </head>
   <body>
     <header class="header">
@@ -91,19 +91,19 @@
             "
           >
             <li class="nav-item">
-              <a class="secondary--text nav-link" href="#home">About</a>
+              <a class="secondary--text nav-link" href="/about/">About</a>
             </li>
             <li class="nav-item">
-              <a class="secondary--text nav-link" href="#program">Program</a>
+              <a class="secondary--text nav-link" href="/#program">Program</a>
             </li>
             <li class="nav-item">
-              <a class="secondary--text nav-link" href="#speakers">Speakers</a>
+              <a class="secondary--text nav-link" href="/#speakers">Speakers</a>
             </li>
             <li class="nav-item">
-              <a class="secondary--text nav-link" href="#sponsors">Sponsor</a>
+              <a class="secondary--text nav-link" href="/#sponsors">Sponsor</a>
             </li>
             <li class="nav-item">
-              <a class="secondary--text nav-link" href="#">News</a>
+              <a class="secondary--text nav-link" href="/#">News</a>
             </li>
           </ul>
 
@@ -111,214 +111,7 @@
         </nav>
       </div>
     </header>
-    <main class="d-flex flex-column main">
-      <section class="home" id="home">
-        <div class="container">
-          <button
-            class="d-flex d-md-none btn btn-menu"
-            type="button"
-            aria-label="Mobile menu button"
-          >
-            <span class="icon icon-menu icon-2x" aria-hidden></span>
-          </button>
-
-          <div class="pa-4 d-flex flex-column justify-center gap-1 content">
-            <p class="secondary--text font-size-h3 greeting">
-              "Hello! Sharing world"
-            </p>
-            <h1
-              class="
-                font-size-h1
-                text-uppercase
-                font-weight-black
-                secondary--text
-                title
-              "
-            >
-              VueConf Toronto 2021
-            </h1>
-            <p class="border border-white border-3px pa-4 details">
-              Join 10,000+ developers from more than 100 countries for the
-              premier Vue.js conference to learn and discuss about the latest of
-              Vue.js and related technologies.
-            </p>
-            <p
-              class="
-                font-weight-bold font-size-h4
-                text-uppercase
-                font-secondary
-                when
-              "
-            >
-              2021.11.22
-              <time datetime="2021-11-22">(mon)</time>
-              ~ 23
-              <time datetime="2021-11-23">(tue)</time>
-            </p>
-            <p class="where">@ Virtual</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section white--text primary program" id="program">
-        <div class="pa-4 d-flex flex-column justify-space-between container">
-          <div class="content">
-            <h2 class="text-size-h2 text-center title">Main Program</h2>
-
-            <ul class="d-flex flex-column flex-md-row gap-1 activities">
-              <li
-                class="d-grid pa-4 d-md-flex flex-md-column gap-md-1 activity"
-              >
-                <div>
-                  <span
-                    class="icon icon-human-male-board icon-4x"
-                    aria-hidden
-                  ></span>
-                </div>
-                <div class="secondary--text font-size-h5">Lecture</div>
-                <div class="white--text">
-                  Listen to the speakers from various countries about the
-                  messages of sharing and opening.
-                </div>
-              </li>
-              <li
-                class="d-grid pa-4 d-md-flex flex-md-column gap-md-1 activity"
-              >
-                <div>
-                  <span
-                    class="icon icon-play-box-outline icon-4x"
-                    aria-hidden
-                  ></span>
-                </div>
-                <div class="secondary--text font-size-h5">CC Exhibition</div>
-                <div class="white--text">
-                  Appreciate various creations applying CC license of artists,
-                  organized from Art Center Nabi.
-                </div>
-              </li>
-              <li
-                class="d-grid pa-4 d-md-flex flex-md-column gap-md-1 activity"
-              >
-                <div><span class="icon icon-forum-outline icon-4x"></span></div>
-                <div class="secondary--text font-size-h5">Forum</div>
-                <div class="white--text">
-                  Have the time to share your thoughts and opinions with experts
-                  for each topic.
-                </div>
-              </li>
-              <li
-                class="d-grid pa-4 d-md-flex flex-md-column gap-md-1 activity"
-              >
-                <div>
-                  <span
-                    class="icon icon-monitor-dashboard icon-4x"
-                    aria-hidden
-                  ></span>
-                </div>
-                <div class="secondary--text font-size-h5">Whorkshop</div>
-                <div class="white--text">
-                  Try creating your own work using open source license rather
-                  than just watching.
-                </div>
-              </li>
-              <li
-                class="d-grid pa-4 d-md-flex flex-md-column gap-md-1 activity"
-              >
-                <div>
-                  <span
-                    class="icon icon-dots-circle icon-4x"
-                    aria-hidden
-                  ></span>
-                </div>
-                <div class="secondary--text font-size-h5">CC Ignite</div>
-                <div class="white--text">
-                  Get opportunities to network with CC affiliates around the
-                  world, also after the summit.
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="d-flex justify-center align-center buttons">
-            <button type="button" class="btn btn-primary">
-              Join VueConf Summit 2021
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="section featured-speakers" id="speakers">
-        <div class="container">
-          <h2 class="font-size-h2 text-center title">Featured Speakers</h2>
-
-          <div class="speakers"></div>
-
-          <div
-            class="
-              d-flex
-              justify-center
-              align-center
-              w-100
-              pa-4
-              d-md-none
-              buttons
-            "
-          >
-            <button
-              type="button"
-              class="
-                btn btn-light
-                w-100
-                d-flex
-                justify-center
-                align-center
-                text-uppercase
-              "
-            >
-              More
-              <span
-                class="icon icon-chevron-down-secondary icon-2x"
-                aria-hidden
-              ></span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="primary section sponsors" id="sponsors">
-        <div class="container">
-          <h2 class="white--text text-center title">Sponsors</h2>
-
-          <div class="sponsors-content"></div>
-
-          <section class="d-flex flex-column gap-2 sponsor-offer">
-            <h4 class="white--text font-size-h4 subtitle">
-              Sponsor VueConf Toronto 2021
-            </h4>
-
-            <p class="white--text description">
-              Interested in sponsoring VueConf Toronto? We’d love to connect
-              with you to discuss the benefits of partnering with us and how you
-              can engage with this vibrant community of talented
-              Vue.js/JavaScript developers. Email us to receive a sponsorship
-              prospectus.
-            </p>
-
-            <button
-              type="button"
-              class="
-                btn btn-secondary
-                white--text
-                font-size-h3
-                align-self-start
-              "
-            >
-              Get in touch
-            </button>
-          </section>
-        </div>
-      </section>
-    </main>
+    <main class="d-flex flex-column main">Hello world!</main>
     <footer class="light footer">
       <div class="d-grid align-center gap-1 pa-8 container">
         <div class="flex-1d left">
