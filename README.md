@@ -70,7 +70,7 @@ Development:
 npm run dev
 ```
 
-The development site is avalable at http://localhost:3000.
+The development site is available at http://localhost:3000.
 
 Linters:
 
