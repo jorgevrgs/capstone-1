@@ -1,6 +1,4 @@
 .header {
-  background-color: transparent;
-
   .toolbar {
     .container {
       padding-block: 0.5rem;
@@ -13,17 +11,42 @@
     }
   }
 
+  .nav-link {
+    padding-block-end: 0.5rem;
+
+    &:hover {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 2rem;
+        height: 2px;
+        background-color: lighten($color-primary, 25%);
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
   .btn-menu {
     position: relative;
   }
 
   &.header-mobile {
+    background-image: url(@/assets/images/headway-F2KRf_QfCqw-unsplash.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
     position: relative;
     z-index: 10;
 
     .menu {
-      background-image: url(@/assets/backgrounds/pattern-1.svg);
+      background-color: rgba($color-light, 0.9);
       position: fixed;
       display: flex;
       flex-direction: column;
@@ -44,8 +67,13 @@
         display: flex;
 
         .nav-link {
-          line-height: 300%;
+          line-height: 250%;
+          font-size: 1.25rem;
         }
+      }
+
+      .btn {
+        font-size: 1.25rem;
       }
     }
   }
