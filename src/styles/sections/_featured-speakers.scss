@@ -1,4 +1,6 @@
 .featured-speakers {
+  padding-block-end: 3rem;
+
   .people {
     list-style: none;
 
@@ -29,6 +31,8 @@
           width: 100%;
           height: auto;
           display: block;
+          margin-block-start: 1rem;
+          margin-inline-start: 1rem;
         }
       }
 
@@ -54,6 +58,15 @@
           background-color: lighten($color-primary, 50%);
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .featured-speakers {
+    .people {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
     }
   }
 }

@@ -60,7 +60,7 @@ export const buildTemplate = ({
 
 export const speakerTemplate = (speaker) => ({
   tag: 'article',
-  className: ['d-grid', 'gap-1', 'speaker'],
+  className: ['d-grid', 'gap-2', 'speaker'],
   children: [
     {
       tag: 'div',
@@ -103,7 +103,14 @@ export const speakerTemplate = (speaker) => ({
 export const speakersTemplate = (speakers) => {
   const people = {
     tag: 'ul',
-    className: ['d-flex', 'flex-column', 'flex-md-row', 'gap-2', 'people'],
+    className: [
+      'd-flex',
+      'flex-column',
+      'd-md-grid',
+      'gap-2',
+      'gap-md-3',
+      'people',
+    ],
     children: [],
   };
 
