@@ -15,10 +15,10 @@
         &::after {
           content: "";
           position: absolute;
-          height: 100%;
-          width: 100%;
-          top: -30%;
-          left: -30%;
+          height: 50%;
+          width: 50%;
+          top: 0;
+          left: 0;
           background-image: url(@/assets/backgrounds/chessboard.svg);
           background-repeat: no-repeat;
           background-size: contain;
