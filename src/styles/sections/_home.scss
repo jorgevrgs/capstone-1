@@ -14,7 +14,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        // stylelint-disable-next-line
         background-clip: text;
+        // stylelint-disable-next-line
+        -webkit-background-clip: text;
         font-size: 4.5rem;
         line-height: 100%;
         font-family: $font-secondary;
