@@ -1,6 +1,9 @@
 .sponsors {
+  padding-inline: 1rem;
+  padding-block-end: 3rem;
+
   .items {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     align-items: center;
     justify-content: center;
@@ -32,6 +35,15 @@
           max-height: 48px;
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .sponsors {
+    .items {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
     }
   }
 }
