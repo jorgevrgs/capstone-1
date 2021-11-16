@@ -3,4 +3,9 @@
   cursor: pointer;
   background: none;
   font-size: 1rem;
+  padding: 0.5rem 1rem;
+
+  &.btn-secondary {
+    border: 3px solid $color-secondary;
+  }
 }

@@ -37,9 +37,8 @@
 }
 
 @media screen and (min-width: $breakpoint-md) {
-  .main {
-    .container {
-      padding-inline: 10%;
-    }
+  .container {
+    padding-inline: 10%;
+    padding-block: 1rem;
   }
 }
