@@ -7,11 +7,16 @@ export default () => {
 
   const headerElement = document.querySelector('.header');
   const menuButtonElement = document.querySelector('.btn-menu');
+  const closeButtonElement = document.querySelector('.btn-close');
   const menuLinkElements = document.querySelectorAll('.nav-item');
 
   // ░█▀▀▀ █──█ █▀▀▄ █▀▀ ▀▀█▀▀ ─▀─ █▀▀█ █▀▀▄ █▀▀
   // ░█▀▀▀ █──█ █──█ █── ──█── ▀█▀ █──█ █──█ ▀▀█
   // ░█─── ─▀▀▀ ▀──▀ ▀▀▀ ──▀── ▀▀▀ ▀▀▀▀ ▀──▀ ▀▀▀
+
+  const handleToggle = () => {
+    toggleClass(headerElement, 'header-mobile');
+  };
 
   /**
    * Handle function if the screen width is desktop
@@ -19,14 +24,11 @@ export default () => {
   const handleDesktop = () => {
     removeClass(headerElement, 'header-mobile');
 
-    menuButtonElement.removeEventListener('click', () => {
-      toggleClass(headerElement, 'header-mobile');
-    });
+    closeButtonElement.removeEventListener('click', handleToggle);
+    menuButtonElement.removeEventListener('click', handleToggle);
 
     menuLinkElements.forEach((menuLink) => {
-      menuLink.removeEventListener('click', () => {
-        toggleClass(headerElement, 'header-mobile');
-      });
+      menuLink.removeEventListener('click', handleToggle);
     });
   };
 
@@ -34,14 +36,11 @@ export default () => {
    * Handle function if the screen width is mobile
    */
   const handleMobile = () => {
-    menuButtonElement.addEventListener('click', () => {
-      toggleClass(headerElement, 'header-mobile');
-    });
+    closeButtonElement.addEventListener('click', handleToggle);
+    menuButtonElement.addEventListener('click', handleToggle);
 
     menuLinkElements.forEach((menuLink) => {
-      menuLink.addEventListener('click', () => {
-        toggleClass(headerElement, 'header-mobile');
-      });
+      menuLink.addEventListener('click', handleToggle);
     });
   };
 

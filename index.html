@@ -62,14 +62,33 @@
         <nav
           class="
             d-none d-md-flex
+            flex-column flex-md-row
             justify-md-space-around
             align-md-center
             gap-3
             menu
           "
         >
+          <button
+            class="d-flex d-md-none btn btn-close"
+            type="button"
+            aria-label="Mobile close button"
+          >
+            <span class="icon icon-close icon-2x" aria-hidden></span>
+          </button>
+
           <ul
-            class="d-none d-md-flex justify-md-space-around gap-md-2 nav-items"
+            class="
+              d-none
+              flex-column
+              align-center
+              gap-1
+              d-md-flex
+              flex-md-row
+              justify-md-space-around
+              gap-md-2
+              nav-items
+            "
           >
             <li class="nav-item">
               <a class="secondary--text nav-link" href="#home">About</a>
@@ -104,7 +123,9 @@
           </button>
 
           <div class="pa-4 d-flex flex-column justify-center gap-1 content">
-            <p class="secondary--text greeting">"Hello! Sharing world"</p>
+            <p class="secondary--text font-size-h3 greeting">
+              "Hello! Sharing world"
+            </p>
             <h1
               class="
                 font-size-h1
