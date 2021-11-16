@@ -24,6 +24,7 @@ export default () => {
    */
   const handleDesktop = () => {
     removeClass(headerElement, 'header-mobile');
+    removeClass(document.body, 'overflow-y-hidden');
 
     closeButtonElement.removeEventListener('click', handleToggle);
     menuButtonElement.removeEventListener('click', handleToggle);
