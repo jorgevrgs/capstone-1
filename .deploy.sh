@@ -16,6 +16,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:jorgevrgs/portfolio.git main:deploy
+git push -f git@github.com:jorgevrgs/capstone-1.git main:deploy
 
 cd -
