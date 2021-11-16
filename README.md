@@ -4,7 +4,7 @@
 
 > The conference page is a project built with development best practices such as HTML semantic tags, linters, accessibility, and more.
 
-![screenshot](.//images/app_screenshot.png)
+![screenshot](./preview.png)
 
 ## Built With
 
