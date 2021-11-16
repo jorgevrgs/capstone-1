@@ -25,3 +25,33 @@
 .white--text {
   color: $color-white;
 }
+
+@media screen and (min-width: $breakpoint-md) {
+  .bg-md-primary {
+    background-color: $color-primary;
+  }
+
+  .bg-md-secondary {
+    background-color: $color-secondary;
+  }
+
+  .bg-md-light {
+    background-color: $color-light;
+  }
+
+  .color-md-primary {
+    color: $color-primary;
+  }
+
+  .color-md-secondary {
+    color: $color-secondary;
+  }
+
+  .color-md-light {
+    color: $color-light;
+  }
+
+  .color-md-white {
+    color: $color-white;
+  }
+}

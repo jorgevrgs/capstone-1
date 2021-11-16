@@ -1,0 +1,21 @@
+.footer {
+  .container {
+    grid-template-columns: 1fr 3fr;
+
+    .left {
+      margin-inline-start: auto;
+    }
+
+    .right {
+      margin-inline-end: auto;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .footer {
+    .container {
+      padding-inline: 10%;
+    }
+  }
+}
