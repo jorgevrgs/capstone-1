@@ -27,7 +27,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://jorgevrgs.github.io/capstone-1) 🔗
+[Live Demo Link](https://stupefied-sinoussi-408dad.netlify.app/) 🔗
 
 ## Getting Started
 
