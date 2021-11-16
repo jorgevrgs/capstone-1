@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "@fontsource/lato": "^4.5.0",
-    "@mdi/font": "^6.5.95"
+    "@mdi/font": "^6.5.95",
+    "autoprefixer": "^10.4.0"
   }
 }
