@@ -9,10 +9,7 @@ export default class ApiClass {
     return new Promise((resolve, reject) => {
       fetch(this.#url)
         .then((res) => res.json())
-        .then((res) => {
-          console.log({ res });
-          resolve(res);
-        })
+        .then(resolve)
         .catch(reject);
     });
   }
