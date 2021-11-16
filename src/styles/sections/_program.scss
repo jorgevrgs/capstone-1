@@ -35,6 +35,8 @@
 @media screen and (min-width: $breakpoint-md) {
   .program {
     .container {
+      min-height: auto;
+
       .activities {
         gap: 0.5rem;
       }

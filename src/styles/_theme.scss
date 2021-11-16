@@ -14,7 +14,9 @@
   z-index: 0;
 
   .section {
-    min-height: 100vh;
+    &:not(.program) {
+      min-height: 100vh;
+    }
 
     .title {
       position: relative;
