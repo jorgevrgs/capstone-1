@@ -26,3 +26,15 @@
     }
   }
 }
+
+@media screen and (min-width: $breakpoint-md) {
+  .home {
+    .container {
+      padding-inline-end: 10%;
+
+      > .content {
+        max-width: $breakpoint-md;
+      }
+    }
+  }
+}

@@ -27,3 +27,13 @@
     }
   }
 }
+
+@media screen and (min-width: $breakpoint-md) {
+  .program {
+    .container {
+      .activities {
+        gap: 0.5rem;
+      }
+    }
+  }
+}

@@ -60,7 +60,7 @@ export const buildTemplate = ({
 
 export const speakerTemplate = (speaker) => ({
   tag: 'article',
-  className: 'speaker',
+  className: ['d-grid', 'gap-1', 'speaker'],
   children: [
     {
       tag: 'div',
@@ -68,7 +68,7 @@ export const speakerTemplate = (speaker) => ({
       children: [
         {
           tag: 'img',
-          class: 'picture',
+          className: 'picture',
           attributes: {
             src: speaker.imageUrl,
             alt: speaker.name,
@@ -82,12 +82,12 @@ export const speakerTemplate = (speaker) => ({
       children: [
         {
           tag: 'h3',
-          className: 'title',
+          className: ['font-size-h3', 'name'],
           textContent: speaker.name,
         },
         {
           tag: 'p',
-          className: 'subtitle',
+          className: ['font-size-h6', 'subtitle'],
           textContent: speaker.subtitle,
         },
         {
@@ -103,7 +103,7 @@ export const speakerTemplate = (speaker) => ({
 export const speakersTemplate = (speakers) => {
   const people = {
     tag: 'ul',
-    className: 'people',
+    className: ['d-flex', 'flex-column', 'flex-md-row', 'gap-2', 'people'],
     children: [],
   };
 
