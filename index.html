@@ -26,41 +26,57 @@
     <script type="module" src="./src/main.js"></script>
   </head>
   <body>
-    <header class="d-md-flex justify-md-space-around header">
-      <button
-        class="d-flex d-md-none btn btn-menu"
-        type="button"
-        aria-label="Mobile menu button"
-      >
-        <span class="icon icon-menu icon-2x" aria-hidden></span>
-      </button>
+    <header class="header">
+      <div class="d-md-flex justify-md-space-between align-center container">
+        <a class="d-none d-md-flex" href="/" aria-describedby="logo">
+          <span class="d-none" id="logo">Logo</span>
+          <img src="/logo.svg" alt="Logo image" />
+        </a>
 
-      <a class="d-none d-md-flex" href="/" aria-describedby="logo">
-        <span class="d-none" id="logo">Logo</span>
-        <img src="/logo.svg" alt="Logo image" />
-      </a>
+        <nav
+          class="
+            d-none d-md-flex
+            justify-md-space-around
+            align-md-center
+            gap-3
+            menu
+          "
+        >
+          <ul
+            class="d-none d-md-flex justify-md-space-around gap-md-2 nav-items"
+          >
+            <li class="nav-item">
+              <a class="secondary--text nav-link" href="#home">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="secondary--text nav-link" href="#program">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="secondary--text nav-link" href="#speakers">Join</a>
+            </li>
+            <li class="nav-item">
+              <a class="secondary--text nav-link" href="#">Sponsor</a>
+            </li>
+            <li class="nav-item">
+              <a class="secondary--text nav-link" href="#">News</a>
+            </li>
+          </ul>
 
-      <ul class="d-none d-md-flex justify-md-space-around gap-md-3 nav-items">
-        <li class="nav-item">
-          <a class="secondary--text nav-link" href="#home">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="secondary--text nav-link" href="#program">Program</a>
-        </li>
-        <li class="nav-item">
-          <a class="secondary--text nav-link" href="#speakers">Join</a>
-        </li>
-        <li class="nav-item">
-          <a class="secondary--text nav-link" href="#">Sponsor</a>
-        </li>
-        <li class="nav-item">
-          <a class="secondary--text nav-link" href="#">News</a>
-        </li>
-      </ul>
+          <button type="button" class="btn btn-secondary">CC Campaign</button>
+        </nav>
+      </div>
     </header>
     <main class="d-flex flex-column main">
       <section class="home" id="home">
         <div class="container">
+          <button
+            class="d-flex d-md-none btn btn-menu"
+            type="button"
+            aria-label="Mobile menu button"
+          >
+            <span class="icon icon-menu icon-2x" aria-hidden></span>
+          </button>
+
           <div class="pa-4 d-flex flex-column justify-center gap-1 content">
             <p class="secondary--text greeting">"Hello! Sharing world"</p>
             <h1
