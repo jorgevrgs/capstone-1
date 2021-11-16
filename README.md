@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Microverse-blueviolet) [![Linters](https://github.com/jorgevrgs/portfolio/actions/workflows/linters.yml/badge.svg)](https://github.com/jorgevrgs/portfolio/actions/workflows/linters.yml)
+![](https://img.shields.io/badge/Microverse-blueviolet) [![Linters](https://github.com/jorgevrgs/capstone-1/actions/workflows/linters.yml/badge.svg)](https://github.com/jorgevrgs/capstone-1/actions/workflows/linters.yml)
 
 # Conference Page
 
@@ -45,16 +45,16 @@ To get a local copy up and running follow these simple example steps.
 Clone from the GitHub repository. Open your Terminal and run the command:
 
 ```
-git clone git@github.com:jorgevrgs/portfolio.git
+git clone git@github.com:jorgevrgs/capstone-1.git
 ```
 
 When the process is completed enter to the folder:
 
 ```
-cd portfolio
+cd capstone-1
 ```
 
-As an alternative, to download the code, open the repository link [here](https://github.com/jorgevrgs/portfolio), and look for the green button `Code` and then click on the option `Download ZIP`.
+As an alternative, to download the code, open the repository link [here](https://github.com/jorgevrgs/capstone-1), and look for the green button `Code` and then click on the option `Download ZIP`.
 
 ### Install
 
@@ -105,7 +105,7 @@ npm test
 
 GitHub Pages:
 
-1. Open your repository page settings, i.e. `https://github.com/<USERNAME>/<REPOSITORY_NAME>/settings/pages` where USERNAME is your GitHub user, for instance `jorgevrgs`, and REPOSITORY_NAME is the name of the GitHub repository, for example `portfolio`.
+1. Open your repository page settings, i.e. `https://github.com/<USERNAME>/<REPOSITORY_NAME>/settings/pages` where USERNAME is your GitHub user, for instance `jorgevrgs`, and REPOSITORY_NAME is the name of the GitHub repository, for example `capstone-1`.
 
 2. Find the `Source` section and select the Branch, default is `main` and click on `Save` button.
 
