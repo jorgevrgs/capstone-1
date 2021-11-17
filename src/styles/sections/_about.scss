@@ -7,7 +7,7 @@
     min-height: calc(100vh - 51px);
 
     .title {
-      font-size: 3rem;
+      font-size: 3.5rem;
       line-height: 100%;
       font-family: $font-secondary;
     }
@@ -22,8 +22,12 @@
 @media screen and (min-width: $breakpoint-md) {
   .about {
     .container {
-      > .content {
+      .content {
         min-height: calc(100vh - 151px);
+
+        .title {
+          font-size: 4.5rem;
+        }
       }
     }
   }

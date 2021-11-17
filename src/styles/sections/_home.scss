@@ -18,10 +18,12 @@
         background-clip: text;
         // stylelint-disable-next-line
         -webkit-background-clip: text;
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         line-height: 100%;
         font-family: $font-secondary;
         color: transparent;
+        text-align: left;
+        padding-inline: 0;
       }
 
       .title::after {
@@ -36,9 +38,13 @@
     .container {
       padding-inline-end: 10%;
 
-      > .content {
+      .content {
         max-width: $breakpoint-md;
         min-height: calc(100vh - 151px);
+
+        .title {
+          font-size: 4.5rem;
+        }
       }
     }
   }
