@@ -19,6 +19,7 @@
 
 .logos {
   padding-block-end: 1rem;
+  border-inline: none;
 
   .media {
     margin-block-start: 3rem;
@@ -36,6 +37,8 @@
 }
 
 .past {
+  padding-block-end: 4rem;
+
   .content {
     .description {
       margin-block-end: 3rem;
