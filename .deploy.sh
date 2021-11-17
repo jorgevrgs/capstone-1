@@ -3,8 +3,6 @@
 # abort on errors
 set -e
 
-rm -rf dist
-
 # build
 npm run build
 
@@ -18,6 +16,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:jorgevrgs/capstone-1.git master:deploy
+git push -f git@github.com:jorgevrgs/capstone-1.git master:gh-pages
 
 cd -
