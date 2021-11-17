@@ -161,3 +161,48 @@ export const sponsorsTemplate = (sponsors) => {
 
   return result;
 };
+
+export const partnerTemplate = (partner) => ({
+  tag: 'a',
+  className: 'partner',
+  attributes: {
+    href: partner.website,
+    target: '_blank',
+  },
+  children: [
+    {
+      tag: 'img',
+      className: 'partner-logo',
+      attributes: {
+        width: 120,
+        src: partner.imageUrl,
+        alt: partner.name,
+      },
+    },
+  ],
+});
+
+export const partnersTemplate = (partners) => {
+  const result = {
+    tag: 'ul',
+    className: [
+      'd-flex',
+      'flex-wrap',
+      'justify-center',
+      'align-center',
+      'gap-1',
+      'items',
+    ],
+    children: [],
+  };
+
+  partners.forEach((partner) => {
+    result.children.push({
+      tag: 'li',
+      className: 'item',
+      children: [partnerTemplate(partner)],
+    });
+  });
+
+  return result;
+};
