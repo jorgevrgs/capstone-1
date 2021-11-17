@@ -1,0 +1,56 @@
+[
+  {
+    "type": "title-diversity-sponsors",
+    "name": "storyblok",
+    "imageUrl": "/capstone-1/sponsors/storyblok.svg",
+    "website": "https://www.storyblok.com/"
+  },
+  {
+    "type": "gold",
+    "name": "abyat",
+    "imageUrl": "/capstone-1/sponsors/abyat.svg",
+    "website": "https://www.abyat.com/"
+  },
+  {
+    "type": "gold",
+    "name": "vuejobs",
+    "imageUrl": "/capstone-1/sponsors/vuejobs.svg",
+    "website": "https://vuejobs.com/"
+  },
+  {
+    "type": "gold",
+    "name": "cloudinary",
+    "imageUrl": "/capstone-1/sponsors/cloudinary.svg",
+    "website": "https://cloudinary.rocks/fy8"
+  },
+  {
+    "type": "gold",
+    "name": "strapi",
+    "imageUrl": "/capstone-1/sponsors/strapi.svg",
+    "website": "https://strp.cc/3mLHIo0"
+  },
+  {
+    "type": "gold",
+    "name": "microsoft",
+    "imageUrl": "/capstone-1/sponsors/microsoft.svg",
+    "website": "https://microsoft.com/"
+  },
+  {
+    "type": "gold",
+    "name": "ionic",
+    "imageUrl": "/capstone-1/sponsors/ionic.svg",
+    "website": "https://ionicframework.com/"
+  },
+  {
+    "type": "gold",
+    "name": "vue storefront",
+    "imageUrl": "/capstone-1/sponsors/vue-storefront.svg",
+    "website": "https://www.vuestorefront.io/"
+  },
+  {
+    "type": "gold",
+    "name": "pandus",
+    "imageUrl": "/capstone-1/sponsors/pandus.svg",
+    "website": "https://pandus.app/"
+  }
+]

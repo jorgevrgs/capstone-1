@@ -1,0 +1,34 @@
+.about {
+  background-image: url(@/assets/backgrounds/colored-patterns.svg);
+  background-size: contain;
+  background-color: $color-grey;
+
+  .content {
+    min-height: calc(100vh - 51px);
+
+    .title {
+      font-size: 3.5rem;
+      line-height: 100%;
+      font-family: $font-secondary;
+    }
+
+    .icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .about {
+    .container {
+      .content {
+        min-height: calc(100vh - 151px);
+
+        .title {
+          font-size: 4.5rem;
+        }
+      }
+    }
+  }
+}

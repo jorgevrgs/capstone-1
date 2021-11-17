@@ -1,0 +1,80 @@
+.featured-speakers {
+  padding-block-end: 3rem;
+
+  .people {
+    list-style: none;
+
+    .speaker {
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: 1fr;
+
+      .left {
+        align-self: flex-start;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          height: 50%;
+          width: 50%;
+          top: 0;
+          left: 0;
+          background-image: url(@/assets/backgrounds/chessboard.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          z-index: -1;
+          filter: opacity(0.5);
+        }
+
+        .picture {
+          width: 100%;
+          height: auto;
+          display: block;
+          margin-block-start: 1rem;
+          margin-inline-start: 1rem;
+        }
+      }
+
+      .right {
+        .title::after {
+          display: none;
+        }
+
+        .subtitle {
+          color: $color-secondary;
+          position: relative;
+          padding-block-end: 2rem;
+          margin-block-end: 2rem;
+        }
+
+        .subtitle::after {
+          content: "";
+          position: absolute;
+          height: 2px;
+          width: 3rem;
+          bottom: 0;
+          left: 0;
+          background-color: lighten($color-primary, 50%);
+        }
+      }
+    }
+  }
+
+  .buttons {
+    margin-block-start: 4rem;
+
+    .icon {
+      margin-inline-start: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .featured-speakers {
+    .people {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+  }
+}

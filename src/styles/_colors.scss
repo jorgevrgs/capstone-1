@@ -1,0 +1,73 @@
+.bg-primary {
+  background-color: $color-primary;
+}
+
+.bg-secondary {
+  background-color: $color-secondary;
+}
+
+.bg-grey {
+  background-color: $color-grey;
+}
+
+.bg-light {
+  background-color: $color-light;
+}
+
+.bg-white {
+  background-color: $color-white;
+}
+
+.color-primary {
+  color: $color-primary;
+}
+
+.color-secondary {
+  color: $color-secondary;
+}
+
+.color-light {
+  color: $color-light;
+}
+
+.color-white {
+  color: $color-white;
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .bg-md-primary {
+    background-color: $color-primary;
+  }
+
+  .bg-md-secondary {
+    background-color: $color-secondary;
+  }
+
+  .bg-md-grey {
+    background-color: $color-grey;
+  }
+
+  .bg-md-light {
+    background-color: $color-light;
+  }
+
+  .bg-md-white {
+    background-color: $color-white;
+  }
+
+  .color-md-primary {
+    color: $color-primary;
+  }
+
+  .color-md-secondary {
+    color: $color-secondary;
+  }
+
+  .color-md-light {
+    color: $color-light;
+  }
+
+  .color-md-white {
+    color: $color-white;
+  }
+}

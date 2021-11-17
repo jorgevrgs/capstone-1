@@ -1,0 +1,51 @@
+.home {
+  background-image: url(@/assets/images/headway-F2KRf_QfCqw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    background-color: rgba($color-light, 0.9);
+
+    .content {
+      min-height: calc(100vh - 51px);
+
+      .title {
+        background-image: url(@/assets/images/pietro-jeng-0Sd2qqU5soQ-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        // stylelint-disable-next-line
+        background-clip: text;
+        // stylelint-disable-next-line
+        -webkit-background-clip: text;
+        font-size: 3.5rem;
+        line-height: 100%;
+        font-family: $font-secondary;
+        color: transparent;
+        text-align: left;
+        padding-inline: 0;
+      }
+
+      .title::after {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .home {
+    .container {
+      padding-inline-end: 10%;
+
+      .content {
+        max-width: $breakpoint-md;
+        min-height: calc(100vh - 151px);
+
+        .title {
+          font-size: 4.5rem;
+        }
+      }
+    }
+  }
+}
