@@ -1,3 +1,5 @@
+// @ts-check
+
 import { isMobile, toggleClass, removeClass } from '../helpers/utils.js';
 
 export default () => {
@@ -5,9 +7,16 @@ export default () => {
   // ░█▀▀▀ █── █▀▀ █─▀─█ █▀▀ █──█ ──█── ▀▀█
   // ░█▄▄▄ ▀▀▀ ▀▀▀ ▀───▀ ▀▀▀ ▀──▀ ──▀── ▀▀▀
 
+  /** @type {HTMLElement} */
   const headerElement = document.querySelector('.header');
+
+  /** @type {HTMLButtonElement} */
   const menuButtonElement = document.querySelector('.btn-menu');
+
+  /** @type {HTMLButtonElement} */
   const closeButtonElement = document.querySelector('.btn-close');
+
+  /** @type {NodeListOf<Element>} */
   const menuLinkElements = document.querySelectorAll('.nav-item');
 
   // ░█▀▀▀ █──█ █▀▀▄ █▀▀ ▀▀█▀▀ ─▀─ █▀▀█ █▀▀▄ █▀▀

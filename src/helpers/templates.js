@@ -1,16 +1,40 @@
+// @ts-check
+
+/**
+ * @typedef {({
+ *  type: string,
+ *  name: string,
+ *  imageUrl: string,
+ *  website: string
+ * })} PartnerDef
+ *
+ * @typedef {({
+ *  name: string,
+ *  subtitle: string,
+ *  imageUrl: string,
+ *  description: string
+ * })} SpeakerDef
+ *
+ * @typedef {({
+ *  [key: string]: (string | number)
+ * })} KeyValDef
+ *
+ * @typedef {({
+ *   tag: string,
+ *   className: (string | string[]),
+ *   attributes?: KeyValDef,
+ *   innerHTML?: string,
+ *   textContent?: string,
+ *   dataset?: KeyValDef,
+ *   children?: (TemplateObjectDef[])
+ * })} TemplateObjectDef
+ */
+
 /**
  *
  * @copyright @jorgevrgs, @vechicin, and @williamrolando88, coding partners
  *
- * @param {object} param0 Project element object
- * @argument param0.tag {string}
- * @argument param0.className {string | array}
- * @argument param0.attributes {object}
- * @argument param0.children {array}
- * @argument param0.innerHTML {string}
- * @argument param0.textContent {string}
- * @argument param0.dataset {object}
- *
+ * @param {TemplateObjectDef} param0 Project element object
  * @returns {HTMLElement}
  */
 export const buildTemplate = ({
@@ -22,7 +46,7 @@ export const buildTemplate = ({
   textContent,
   dataset = undefined,
 }) => {
-  /** @type Element */
+  /** @type HTMLElement */
   const element = document.createElement(tag);
 
   if (Array.isArray(className)) {
@@ -38,14 +62,14 @@ export const buildTemplate = ({
   }
 
   if (attributes) {
-    Object.keys(attributes).forEach((key) => {
-      element.setAttribute(key, attributes[key]);
+    Object.keys(attributes).forEach((key /** @type {string} */) => {
+      element.setAttribute(key, String(attributes[key]));
     });
   }
 
   if (dataset) {
-    Object.keys(dataset).forEach((key) => {
-      element.dataset[key] = dataset[key];
+    Object.keys(dataset).forEach((key /** @type {string} */) => {
+      element.dataset[key] = String(dataset[key]);
     });
   }
 
@@ -58,6 +82,11 @@ export const buildTemplate = ({
   return element;
 };
 
+/**
+ *
+ * @param {SpeakerDef} speaker Speaker object
+ * @returns {TemplateObjectDef}
+ */
 export const speakerTemplate = (speaker) => ({
   tag: 'article',
   className: ['d-grid', 'gap-2', 'speaker'],
@@ -73,7 +102,7 @@ export const speakerTemplate = (speaker) => ({
             src: speaker.imageUrl,
             alt: speaker.name,
           },
-        },
+        } /** @type {TemplateObjectDef} */,
       ],
     },
     {
@@ -100,6 +129,11 @@ export const speakerTemplate = (speaker) => ({
   ],
 });
 
+/**
+ *
+ * @param {[SpeakerDef]} speakers Speakers array
+ * @returns {TemplateObjectDef}
+ */
 export const speakersTemplate = (speakers) => {
   const people = {
     tag: 'ul',
@@ -125,6 +159,11 @@ export const speakersTemplate = (speakers) => {
   return people;
 };
 
+/**
+ *
+ * @param {PartnerDef} sponsor
+ * @returns {TemplateObjectDef}
+ */
 export const sponsorTemplate = (sponsor) => ({
   tag: 'a',
   className: 'sponsor',
@@ -144,6 +183,11 @@ export const sponsorTemplate = (sponsor) => ({
   ],
 });
 
+/**
+ *
+ * @param {[PartnerDef]} sponsors
+ * @returns {TemplateObjectDef}
+ */
 export const sponsorsTemplate = (sponsors) => {
   const result = {
     tag: 'ul',
@@ -162,6 +206,11 @@ export const sponsorsTemplate = (sponsors) => {
   return result;
 };
 
+/**
+ *
+ * @param {PartnerDef} partner
+ * @returns {TemplateObjectDef}
+ */
 export const partnerTemplate = (partner) => ({
   tag: 'a',
   className: 'partner',
@@ -182,7 +231,13 @@ export const partnerTemplate = (partner) => ({
   ],
 });
 
+/**
+ *
+ * @param {[PartnerDef]} partners
+ * @returns {TemplateObjectDef}
+ */
 export const partnersTemplate = (partners) => {
+  /** @type {TemplateObjectDef} */
   const result = {
     tag: 'ul',
     className: [
@@ -197,11 +252,14 @@ export const partnersTemplate = (partners) => {
   };
 
   partners.forEach((partner) => {
-    result.children.push({
+    /** @type {TemplateObjectDef} */
+    const child = {
       tag: 'li',
       className: 'item',
       children: [partnerTemplate(partner)],
-    });
+    };
+
+    result.children.push(child);
   });
 
   return result;

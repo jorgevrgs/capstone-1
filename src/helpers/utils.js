@@ -1,3 +1,5 @@
+// @ts-check
+
 /**
  * Check whether it's mobile base on screen width
  *

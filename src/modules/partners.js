@@ -1,3 +1,5 @@
+// @ts-check
+
 import { buildTemplate, partnersTemplate } from '../helpers/templates.js';
 import ApiClass from '../classes/ApiClass.js';
 
