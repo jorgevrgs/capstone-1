@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Evan You",
+    "subtitle": "Husband, father of two, independent open source developer. Creator / project lead of @vuejs , @vite_js and connoisseur of sushi.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorem voluptate corrupti quaerat cum necessitatibus doloribus. Et, exercitationem, illo asperiores ad expedita error maxime deserunt nesciunt aspernatur, a iste sint?",
+    "imageUrl": "/capstone-1/speakers/evan.d83c5f2.jpg"
+  },
+  {
+    "name": "Sebastien Chopin",
+    "subtitle": "@nuxtlabs CEO • Making web development intuitive with @nuxt_js and @docus_",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla, quo quis ad perspiciatis cupiditate dolores provident doloribus, nihil, molestiae ullam dignissimos nesciunt! Rerum corporis quos veniam mollitia quam magni?",
+    "imageUrl": "/capstone-1/speakers/sebastien.8c8c561.jpg"
+  },
+  {
+    "name": "Natalia Tepluhina",
+    "subtitle": "👩‍💻 @vuejs core team | 🦊 Staff Frontend Engineer @gitlab | 🗜️ @GoogleDevExpert | ☕️ coffee lover",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque a, doloremque explicabo sapiente laudantium, qui voluptas molestiae vitae quaerat dignissimos architecto dicta modi atque cum necessitatibus corrupti earum quisquam? Illum.",
+    "imageUrl": "/capstone-1/speakers/natalia.fefc8a5.jpg"
+  },
+  {
+    "name": "Cecilia Olivera",
+    "subtitle": "When I'm not removing cat hair from my clothes I'm a frontend developer 🦄  UX/UI designer at @64Robots #a11y 🥑",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates, facere accusantium vero, quas possimus nulla repudiandae odio officia ex autem enim eius numquam quisquam accusamus debitis veritatis ipsa repellat?",
+    "imageUrl": "/capstone-1/speakers/cecilia.1cea5ee.jpg"
+  }
+]
