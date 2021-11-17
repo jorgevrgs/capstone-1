@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Microverse-blueviolet) [![Linters](https://github.com/jorgevrgs/capstone-1/actions/workflows/linters.yml/badge.svg)](https://github.com/jorgevrgs/capstone-1/actions/workflows/linters.yml)
+![Microverse](https://img.shields.io/badge/Microverse-blueviolet) [![Linters](https://github.com/jorgevrgs/capstone-1/actions/workflows/linters.yml/badge.svg)](https://github.com/jorgevrgs/capstone-1/actions/workflows/linters.yml) [![Build Status](https://app.travis-ci.com/jorgevrgs/capstone-1.svg?branch=main)](https://app.travis-ci.com/jorgevrgs/capstone-1)
 
 # Conference Page
 
