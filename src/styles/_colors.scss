@@ -1,28 +1,36 @@
-.primary {
+.bg-primary {
   background-color: $color-primary;
 }
 
-.secondary {
+.bg-secondary {
   background-color: $color-secondary;
 }
 
-.light {
+.bg-grey {
+  background-color: $color-grey;
+}
+
+.bg-light {
   background-color: $color-light;
 }
 
-.primary--text {
+.bg-white {
+  background-color: $color-white;
+}
+
+.color-primary {
   color: $color-primary;
 }
 
-.secondary--text {
+.color-secondary {
   color: $color-secondary;
 }
 
-.light--text {
+.color-light {
   color: $color-light;
 }
 
-.white--text {
+.color-white {
   color: $color-white;
 }
 

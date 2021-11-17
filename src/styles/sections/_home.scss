@@ -23,6 +23,10 @@
         font-family: $font-secondary;
         color: transparent;
       }
+
+      .title::after {
+        display: none;
+      }
     }
   }
 }

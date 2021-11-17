@@ -27,7 +27,6 @@
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;
-  background-color: $color-primary;
   max-width: 100%;
   width: 140px;
   height: 36px;
@@ -35,6 +34,11 @@
 
 .icon-chevron-down {
   background-image: url(@/assets/svg/chevron-down.svg);
+}
+
+.icon-chevron-right {
+  background-image: url(@/assets/svg/chevron-down.svg);
+  transform: rotate(-90deg);
 }
 
 .icon-chevron-down-secondary {
