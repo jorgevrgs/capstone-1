@@ -17,6 +17,25 @@
   }
 }
 
+.logos {
+  margin-block-end: 2rem;
+  padding-block-end: 1rem;
+
+  .media {
+    margin-block-start: 3rem;
+
+    .figure {
+      padding-inline: 6rem;
+
+      .caption {
+        border-block: 1px solid $color-light;
+        margin-block-start: 1rem;
+        color: lighten($color-primary, 25%);
+      }
+    }
+  }
+}
+
 @media screen and (min-width: $breakpoint-md) {
   .about {
     .container {
