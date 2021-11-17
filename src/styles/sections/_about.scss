@@ -4,6 +4,8 @@
   background-color: $color-grey;
 
   .content {
+    min-height: calc(100vh - 51px);
+
     .title {
       font-size: 3rem;
       line-height: 100%;

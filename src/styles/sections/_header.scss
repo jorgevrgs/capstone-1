@@ -61,10 +61,15 @@
         position: absolute;
         top: 0;
         left: 0;
+        margin-inline: 1rem;
       }
 
       .nav-items {
         display: flex;
+
+        .nav-home {
+          display: block;
+        }
 
         .nav-link {
           line-height: 250%;
