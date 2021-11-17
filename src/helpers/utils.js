@@ -15,7 +15,9 @@ export const isMobile = (width = 768) => window.innerWidth < width;
  * @returns {void}
  */
 export const toggleClass = (element, className) => {
-  element.classList.toggle(className);
+  if (element) {
+    element.classList.toggle(className);
+  }
 };
 
 /**
@@ -27,7 +29,9 @@ export const toggleClass = (element, className) => {
  * @returns {void}
  */
 export const removeClass = (element, className) => {
-  element.classList.remove(className);
+  if (element) {
+    element.classList.remove(className);
+  }
 };
 
 /**
@@ -39,11 +43,13 @@ export const removeClass = (element, className) => {
  * @returns {void}
  */
 export const addClass = (element, className) => {
-  if (className.length) {
-    if (typeof className === 'string') {
-      element.classList.add(className);
-    } else if (Array.isArray(className)) {
-      element.classList.add(...className);
+  if (element) {
+    if (className.length) {
+      if (typeof className === 'string') {
+        element.classList.add(className);
+      } else if (Array.isArray(className)) {
+        element.classList.add(...className);
+      }
     }
   }
 };

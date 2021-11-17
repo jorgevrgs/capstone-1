@@ -1,16 +1,19 @@
-export default class ApiClass {
-  #url = '';
+import MockProvider from './MockProvider.js';
 
-  constructor(service) {
-    this.#url = `json/${service}.json`;
+export default class ApiClass {
+  #api = undefined;
+
+  constructor(serviceProvider) {
+    if (!serviceProvider) {
+      const mockProvider = new MockProvider();
+
+      this.#api = mockProvider;
+    } else {
+      this.#api = serviceProvider;
+    }
   }
 
-  get() {
-    return new Promise((resolve, reject) => {
-      fetch(this.#url)
-        .then((res) => res.json())
-        .then(resolve)
-        .catch(reject);
-    });
+  get(service) {
+    return this.#api.get(service);
   }
 }

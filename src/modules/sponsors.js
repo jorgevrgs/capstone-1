@@ -5,14 +5,16 @@ export default async () => {
   // ░█▀▀▀ █── █▀▀ █▀▄▀█ █▀▀ █▀▀▄ ▀▀█▀▀ █▀▀
   // ░█▀▀▀ █── █▀▀ █─▀─█ █▀▀ █──█ ──█── ▀▀█
   // ░█▄▄▄ ▀▀▀ ▀▀▀ ▀───▀ ▀▀▀ ▀──▀ ──▀── ▀▀▀
-  const speakersElement = document.querySelector('.sponsors-content');
+  const sponsorsElement = document.querySelector('.sponsors-content');
 
-  const api = new ApiClass('sponsors');
+  if (sponsorsElement) {
+    const api = new ApiClass();
 
-  const result = await api.get();
+    const result = await api.get('sponsors');
 
-  const object = sponsorsTemplate(result);
-  const element = buildTemplate(object);
+    const object = sponsorsTemplate(result);
+    const element = buildTemplate(object);
 
-  speakersElement.appendChild(element);
+    sponsorsElement.appendChild(element);
+  }
 };

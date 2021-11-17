@@ -15,7 +15,9 @@ export default () => {
   // ░█─── ─▀▀▀ ▀──▀ ▀▀▀ ──▀── ▀▀▀ ▀▀▀▀ ▀──▀ ▀▀▀
 
   const handleToggle = () => {
-    toggleClass(headerElement, 'header-mobile');
+    if (headerElement) {
+      toggleClass(headerElement, 'header-mobile');
+    }
     toggleClass(document.body, 'overflow-y-hidden');
   };
 
@@ -26,24 +28,38 @@ export default () => {
     removeClass(headerElement, 'header-mobile');
     removeClass(document.body, 'overflow-y-hidden');
 
-    closeButtonElement.removeEventListener('click', handleToggle);
-    menuButtonElement.removeEventListener('click', handleToggle);
+    if (closeButtonElement) {
+      closeButtonElement.removeEventListener('click', handleToggle);
+    }
 
-    menuLinkElements.forEach((menuLink) => {
-      menuLink.removeEventListener('click', handleToggle);
-    });
+    if (menuButtonElement) {
+      menuButtonElement.removeEventListener('click', handleToggle);
+    }
+
+    if (menuButtonElement) {
+      menuLinkElements.forEach((menuLink) => {
+        menuLink.removeEventListener('click', handleToggle);
+      });
+    }
   };
 
   /**
    * Handle function if the screen width is mobile
    */
   const handleMobile = () => {
-    closeButtonElement.addEventListener('click', handleToggle);
-    menuButtonElement.addEventListener('click', handleToggle);
+    if (closeButtonElement) {
+      closeButtonElement.addEventListener('click', handleToggle);
+    }
 
-    menuLinkElements.forEach((menuLink) => {
-      menuLink.addEventListener('click', handleToggle);
-    });
+    if (menuButtonElement) {
+      menuButtonElement.addEventListener('click', handleToggle);
+    }
+
+    if (menuLinkElements) {
+      menuLinkElements.forEach((menuLink) => {
+        menuLink.addEventListener('click', handleToggle);
+      });
+    }
   };
 
   // ░█▀▄▀█ █▀▀█ ─▀─ █▀▀▄

@@ -7,12 +7,14 @@ export default async () => {
   // ░█▄▄▄ ▀▀▀ ▀▀▀ ▀───▀ ▀▀▀ ▀──▀ ──▀── ▀▀▀
   const speakersElement = document.querySelector('.speakers');
 
-  const api = new ApiClass('speakers');
+  if (speakersElement) {
+    const api = new ApiClass();
 
-  const result = await api.get();
+    const result = await api.get('speakers');
 
-  const object = speakersTemplate(result);
-  const element = buildTemplate(object);
+    const object = speakersTemplate(result);
+    const element = buildTemplate(object);
 
-  speakersElement.appendChild(element);
+    speakersElement.appendChild(element);
+  }
 };
