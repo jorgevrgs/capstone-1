@@ -1,0 +1,18 @@
+.logos {
+  padding-block-end: 1rem;
+  border-inline: none;
+
+  .media {
+    margin-block-start: 3rem;
+
+    .figure {
+      padding-inline: 6rem;
+
+      .caption {
+        border-block: 1px solid $color-light;
+        margin-block-start: 1rem;
+        color: lighten($color-primary, 25%);
+      }
+    }
+  }
+}
