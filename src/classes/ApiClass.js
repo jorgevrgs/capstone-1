@@ -5,9 +5,7 @@ export default class ApiClass {
 
   constructor(serviceProvider) {
     if (!serviceProvider) {
-      const mockProvider = new MockProvider();
-
-      this.#api = mockProvider;
+      this.#api = MockProvider;
     } else {
       this.#api = serviceProvider;
     }

@@ -1,10 +1,10 @@
 export default class MockProvider {
-  constructor() {}
-
-  async get(service) {
-    const res = await import(`../mock/${service}.json`);
-    const data = res.default;
-
-    return data;
+  static get(service) {
+    return new Promise((resolve, reject) => {
+      fetch(`/capstone-1/mock/${service}.json`)
+        .then((res) => res.json())
+        .then(resolve)
+        .catch(reject);
+    });
   }
 }
